@@ -1,0 +1,33 @@
+public class MyClass {
+    public String hello;
+    
+    public void greetings(){
+        hello = "Hello World";
+        System.out.println(hello);
+    }
+    
+    public String createHero(String heroName){
+        String heroCreated = heroName + "";
+        return heroCreated;
+    }
+    public void introduceHero(String s) {
+      System.out.println("HI I AM : " +s); 
+   }
+   
+    public int calculateDamage(int baseDamage, int damageMultiplier) {
+        int totalDamage = baseDamage * damageMultiplier;
+        return totalDamage;
+    }
+    
+    public static void main(String args[]) {
+        MyClass newClass = new MyClass();
+        newClass.greetings();
+        String mystorage=newClass.createHero("Aldous");
+       newClass.introduceHero(mystorage);
+       
+       int baseDamage = 50;
+        int damageMultiplier = 2;
+        int totalDamage = hero.calculateDamage(baseDamage, damageMultiplier);
+        System.out.println("Total damage: " + totalDamage);
+    }
+}
